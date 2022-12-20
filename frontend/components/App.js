@@ -4,6 +4,18 @@ import Form from "./Form";
 import TodoList from "./TodoList";
 
 /*
+POSTMAN ÖRNEK GÖRSELLERİ images KLASÖRÜNDE
+*/
+
+/*
+Önceden şöyle yapıyorduk:
+Stateten verileri göstermek - değişiklik olduğunda statei güncellemek
+
+Backend sisteme dahil olduğunda şöyle yapacağız:
+Verileri serverdan almak - state'e yazmak - değişiklikleri servera göndermek - serverdan güncellenmiş verileri almak - güncellenmiş verileri tekrar state yazmak
+*/
+
+/*
 BAŞLANGIÇ: todo listesini serverdan almak
 Önceden state içerisinde başlangıç değeri olarak verdiğimiz todo listesini bu sefer GET ile alacağız
 1. todos state'i başlangıç değerine boş bir array veriyoruz
@@ -22,7 +34,6 @@ PATCH http://localhost:9000/api/todos/:id
   - Payload gerektirmez
   - URL'den gönderilen id üzerinde tamamlandi değişkenini günceller
   - 200 OK cevabı ile güncellenen todo yu döndürür
-
 */
 
 export default function App() {
